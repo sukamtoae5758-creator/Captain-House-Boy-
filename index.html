@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Captain House</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0077cc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .house-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .house-card {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            padding: 20px;
+            height: 200px;
+            color: white;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .house-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        }
+        .house-name {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .captain-name {
+            font-size: 16px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #f0f0f0;
+            margin-top: 50px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>Daftar Captain House</header>
+    <div class="container">
+        <div class="house-grid">
+            <div class="house-card" style="background-image: url('images/eagle.jpg');">
+                <div class="house-name">House Eagle</div>
+                <div class="captain-name">Jericco Nando Prabadian Putranto</div>
+            </div>
+            <div class="house-card" style="background-image: url('images/hornbill.jpg');">
+                <div class="house-name">House Hornbill</div>
+                <div class="captain-name">Satria Unggul Habibie</div>
+            </div>
+            <div class="house-card" style="background-image: url('images/dove.jpg');">
+                <div class="house-name">House Dove</div>
+                <div class="captain-name">Rizky Ardiansyah</div>
+            </div>
+            <div class="house-card" style="background-image: url('images/komodo.jpg');">
+                <div class="house-name">House Komodo</div>
+                <div class="captain-name">Bangkit Dwi Ramdani</div>
+            </div>
+            <div class="house-card" style="background-image: url('images/lion.jpg');">
+                <div class="house-name">House Lion</div>
+                <div class="captain-name">Muhammad Rido Sahara</div>
+            </div>
+            <div class="house-card" style="background-image: url('images/rhino.jpg');">
+                <div class="house-name">House Rhino</div>
+                <div class="captain-name">Muhammad Andika Putra</div>
+            </div>
+            <div class="house-card" style="background-image: url('images/mantaray.jpg');">
+                <div class="house-name">House Mantaray</div>
+                <div class="captain-name">Zainal Abidin</div>
+            </div>
+            <div class="house-card" style="background-image: url('images/dolphin.jpg');">
+                <div class="house-name">House Dolphin</div>
+                <div class="captain-name">Aldi Nasruril</div>
+            </div>
+            <div class="house-card" style="background-image: url('images/shark.jpg');">
+                <div class="house-name">House Shark</div>
+                <div class="captain-name">Dwi Aris Edy Prasetyo</div>
+            </div>
+        </div>
+    </div>
+    <footer>&copy; 2025 Daftar Captain House</footer>
+</body>
+</html>
